@@ -1,0 +1,8 @@
+A library for parsing Quake Live demos, written in Scala and licensed under the MIT License.
+
+The term 'parsing' is used just because it's more popular, since no actual tokenization/parsing is required to read the contents of a demo file.
+
+There are no comments (aka code duplication :]), but there's little of it and it's simple.
+
+Also, this library only provides the structure and numbers inside a demo, making sense of those numbers requires an another layer on top of this library and manual research to identify their meaning.
+
