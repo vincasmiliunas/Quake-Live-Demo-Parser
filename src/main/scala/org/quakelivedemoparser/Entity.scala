@@ -2,7 +2,7 @@ package org.quakelivedemoparser
 
 class Entity {
   val animations: Array[Option[Int]] = Array(None, None)
-  val angles: Array[Array[Option[Float]]] = Array(Array(None, None), Array(None, None))
+  val angles: Array[Array[Option[Float]]] = Array(Array(None, None, None), Array(None, None, None))
   var client: Option[Int] = None
   val entities: Array[Option[Int]] = Array(None, None, None)
   val entity: Array[Option[Int]] = Array(None, None)
