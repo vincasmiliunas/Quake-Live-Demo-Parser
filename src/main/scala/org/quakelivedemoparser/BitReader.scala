@@ -44,8 +44,11 @@ class BitReader(buffer: BitBufferFeed) {
   }
 
   def read_float: Float = {
-    val ret = if (read_bit == 0) read_bits(13) - 4096 else read_int
-    java.lang.Float.intBitsToFloat(ret)
+    if (read_bit == 0) {
+      read_bits(13) - 4096
+    } else {
+      java.lang.Float.intBitsToFloat(read_int)
+    }
   }
 
   def read_string: String = {
