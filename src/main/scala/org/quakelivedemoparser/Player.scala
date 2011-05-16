@@ -29,5 +29,5 @@ class Player {
   val vitals: Array[Option[Int]] = new Array(16)
   for (i <- 0 until vitals.length)
     vitals(i) = None
-  val weapon: Array[Option[Float]] = Array(None, None, None)
+  val weapon: Array[Option[Int]] = Array(None, None, None)
 }
