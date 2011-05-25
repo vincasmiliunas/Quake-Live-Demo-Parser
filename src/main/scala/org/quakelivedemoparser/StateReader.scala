@@ -94,7 +94,7 @@ class StateReader(bit_reader: BitReader) {
     }
 
     if (bit_reader.read_bit == 1) {
-      read_values(result.vitals, bit_reader.read_short _)
+      read_values(result.vitals, bit_reader.read_signed_short _)
       read_values(result.attributes, bit_reader.read_short _)
       read_values(result.ammunition, bit_reader.read_short _)
       read_values(result.powerups, bit_reader.read_int _)
