@@ -120,7 +120,7 @@ class StateReader(bit_reader: BitReader) {
       () => { result.trajectories(0).delta(0) = Some(read_float) },
       () => { result.trajectories(0).delta(1) = Some(read_float) },
       () => { result.trajectories(0).base(2) = Some(read_float) },
-      () => { result.trajectories(0).base(1) = Some(read_float) },
+      () => { result.trajectories(1).base(1) = Some(read_float) },
       () => { result.trajectories(0).delta(2) = Some(read_float) },
       () => { result.trajectories(1).base(0) = Some(read_float) },
       () => { result.trajectories(0).gravity = Some(read_int) },
